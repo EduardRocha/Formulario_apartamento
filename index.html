@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anuncie seu imóvel!</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3>Porucure um imóvel para reservar</h3>
+      </div>
+      <div class="form-container">
+        <div class="form-header">
+          <p>Formulário</p>
+        </div>
+        <div class="form-body">
+          <h1>Faça reserva de um imóvel de forma rápida e fácil!</h1>
+          <p>Informe as características do seu imóvel que deseja</p>
+          <form action="">
+            <div class="input-box">
+              <p>Tipo do imóvel <span class="required title">*</span></p>
+              <div class="radios">
+                <label for="apartamento">Apartamento</label>
+                <input
+                  type="radio"
+                  name="typeChoice"
+                  id="apartamento"
+                  required
+                />
+                <label for="casa">Casa</label>
+                <input type="radio" id="casa" name="typeChoice" />
+              </div>
+            </div>
+            <div class="input-box">
+              <label for="price"
+                >Preço <span class="required title">*</span></label
+              >
+              <input
+                name="price"
+                type="number"
+                maxlength="30"
+                minlength="1"
+                placeholder="Informe até qual valor você quer procurar..."
+                required
+              />
+            </div>
+            <div class="dates">
+              <div class="input-box">
+                <label for="check-in"
+                  >Data de check-in <span class="required title">*</span></label
+                >
+                <input name="check-in" type="date" required />
+              </div>
+              <div class="input-box">
+                <label for="check-in"
+                  >Data de check-out
+                  <span class="required title">*</span></label
+                >
+                <input name="check-out" type="date" required />
+              </div>
+            </div>
+            <div class="input-box">
+              <label for="images"
+                >Fotos do imóvel <span class="required title">*</span></label
+              >
+              <input type="file" id="images" name="images" multiple required />
+            </div>
+            <p>Opcionais</p>
+            <div class="optionals">
+              <div class="input-box">
+                <input type="checkbox" value="ac" name="ac" id="ac" />
+                <label for="ac">Ar condicionado</label>
+                <input type="checkbox" value="suite" name="suite" id="suite" />
+                <label for="suite">Suíte</label>
+                <input
+                  type="checkbox"
+                  value="bath-thub"
+                  name="bath-thub"
+                  id="bath-thub"
+                />
+                <label for="bath-thub">Banheira</label>
+                <input type="checkbox" value="party" name="party" id="party" />
+                <label for="party">Salão de festas</label>
+              </div>
+              <div class="input-box">
+                <input
+                  type="checkbox"
+                  value="campfire"
+                  name="campfire"
+                  id="campfire"
+                />
+                <label for="campfire">Fogueira</label>
+                <input
+                  type="checkbox"
+                  value="churrasqueira"
+                  name="churrasqueira"
+                  id="churrasqueira"
+                />
+                <label for="churrasqueira">Churrasqueira</label>
+                <input type="checkbox" value="trip" name="trip" id="trip" />
+                <label for="trip">Passeios inclusos</label>
+              </div>
+            </div>
+
+            <input type="submit" value="Enviar" class="submit-btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

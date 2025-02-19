@@ -17,7 +17,7 @@
         </div>
         <div class="form-body">
           <h1>Faça reserva de um imóvel de forma rápida e fácil!</h1>
-          <p>Informe as características do seu imóvel que deseja</p>
+          <p>Informe as características do imóvel que deseja</p>
           <form action="">
             <div class="input-box">
               <p>Tipo do imóvel <span class="required title">*</span></p>
@@ -61,12 +61,6 @@
                 <input name="check-out" type="date" required />
               </div>
             </div>
-            <div class="input-box">
-              <label for="images"
-                >Fotos do imóvel <span class="required title">*</span></label
-              >
-              <input type="file" id="images" name="images" multiple required />
-            </div>
             <p>Opcionais</p>
             <div class="optionals">
               <div class="input-box">
@@ -99,11 +93,22 @@
                   id="churrasqueira"
                 />
                 <label for="churrasqueira">Churrasqueira</label>
-                <input type="checkbox" value="trip" name="trip" id="trip" />
-                <label for="trip">Passeios inclusos</label>
+                <input
+                  type="checkbox"
+                  value="varanda"
+                  name="varanda"
+                  id="varanda"
+                />
+                <label for="varanda">Varanda</label>
+                <input
+                  type="checkbox"
+                  value="elevador"
+                  name="elevador"
+                  id="elevador"
+                />
+                <label for="elevador">Elevador</label>
               </div>
             </div>
-
             <input type="submit" value="Enviar" class="submit-btn" />
           </form>
         </div>
